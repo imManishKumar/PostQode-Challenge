@@ -20,12 +20,14 @@ The implementation follows a logical sequence:
 ---
 
 ## 📁 Repository Structure
-.
-├── ShopSphere_brd
-├── Shop_Sphere_test_cases
-├── WebAgent
-├── APIAgent
-├── payload.json
+
+    .
+    ├── ShopSphere_brd
+    ├── Shop_Sphere_test_cases
+    ├── WebAgent
+    ├── APIAgent
+    ├── payload.json
+    ├── create_story.ps1
 
 ---
 
