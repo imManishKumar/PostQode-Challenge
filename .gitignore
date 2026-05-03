@@ -1,0 +1,5 @@
+create_story.ps1
+WebAgent/PlaywrightTests/node_modules/
+WebAgent/PlaywrightTests/test-results/
+WebAgent/PlaywrightTests/tsconfig.json
+APIAgent/automation/target/

@@ -1,0 +1,51 @@
+{
+  "baseUrl": "https://api.restful-api.dev",
+  "resourcePath": "/objects",
+  "validIds": {
+    "existingObjectId": "1"
+  },
+  "invalidIds": {
+    "nonExistingObjectId": "9999999"
+  },
+  "payloads": {
+    "createObjectValid": {
+      "name": "Apple MacBook Pro M5",
+      "data": {
+        "year": 2026,
+        "price": 1849.99,
+        "CPU model": "M5",
+        "Hard disk size": "1 TB"
+      }
+    },
+    "createObjectMissingName": {
+      "data": {
+        "year": 2026,
+        "price": 1849.99
+      }
+    },
+    "updateObjectValid": {
+      "name": "Apple MacBook Pro 16",
+      "data": {
+        "year": 2019,
+        "price": 2049.99,
+        "CPU model": "Intel Core i9",
+        "Hard disk size": "1 TB",
+        "color": "silver"
+      }
+    },
+    "patchObjectValid": {
+      "name": "Apple MacBook Pro 16 (Updated Name)"
+    }
+  },
+  "expectedResults": {
+    "listObjectsStatus": 200,
+    "getObjectValidStatus": 200,
+    "getObjectInvalidStatus": 404,
+    "createObjectSuccessStatus": [200, 201],
+    "createObjectValidationFailureStatus": [400],
+    "updateObjectSuccessStatus": 200,
+    "updateObjectInvalidStatus": [404],
+    "patchObjectSuccessStatus": 200,
+    "patchObjectInvalidStatus": [404]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "fields": {
+    "project": { "key": "SHOP" },
+    "summary": "As a shopper, I want to manage cart and checkout securely so that I can complete purchases seamlessly",
+    "issuetype": { "name": "Story" },
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Implement cart and checkout flow per BRD: add/remove/update cart, total calculation, secure checkout, and multiple payment options. Acceptance criteria: only logged-in users can place orders, cart expiry after 7 days, and payment success/failure handling."
+            }
+          ]
+        }
+      ]
+    },
+    "parent": { "key": "SHOP-1" }
+  }
+}
